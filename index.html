@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Skarlatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/445292ce18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>B</span>ill Skarlatos</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Bill</span><br> Skarlatos, from Greece</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/Me.jpg" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About <span>Me</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('CWO')">Currently Working on</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Analyzing and Predicting Data Using modern Frameworks in Python</li>
+                            <li><span>Web Development</span><br>Developing Full Stack Websites</li>
+                            <li><span>Optimisation</span><br>Using calculus to determine complexity and improving it</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>CSD, AUTh, BSc 2021-Present</span><br>Currently in my third year in the Computer Science Departement of the Aristotle Usiversity of Thessaloniki for my BSc Degree </li>
+                            <li><span>1st High School of Xanthi 2018-2021</span><br>Finished all of my primary education averaging higher than 95%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="CWO">
+                        <ul>
+                            <li><span>Task Manager App</span><br>An algorithm that takes inputs taks, time required to complete them, importance factor etc and optimally organise them for the user </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Science</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Algorithm Optimization</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work / Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tname){
+        for(tbl of tablinks){
+            tbl.classList.remove("active-link");
+        }
+        for(tbc of tabcontents){
+            tbc.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
