@@ -500,13 +500,21 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
 
+    .col1 img{
+        width: 90%;
+    }
+
     .col2{
         font-size: 14px;
     }
 
     .tab-links{
-        font-size: 16px;
+        font-size: 20px;
         margin-right: 20px;
+    }
+
+    .tab-contents li{
+        font-size: 18px;
     }
 
     .contact-left, .contact-right{
