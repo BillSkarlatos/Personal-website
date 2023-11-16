@@ -129,6 +129,10 @@ nav ul li a:hover::after{
     color: #FB2576;
 }
 
+span.portfolio{
+    color: #FFF;
+}
+
 /* -------------- Tab Titles ---------------- */
 
 .tab-titles{
@@ -348,6 +352,20 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
+.contact-left a i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #131313;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.contact-left a i:hover{
+    color: #FB2576;
+    transform: translateY(-5px);
+}
+
 .social-media a{
     text-decoration: none;
     font-size: 30px;
@@ -366,6 +384,11 @@ nav ul li a:hover::after{
     display: inline-block;
     background:transparent;
     transition: 0.5s;
+}
+
+.btn.btn2 a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 .btn.btn2:hover{
@@ -419,14 +442,14 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .header-text{
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .header-text h1{
-        font-size: 30px;
+        font-size: 44px;
     }
 
     nav .fa-solid{
@@ -463,6 +486,10 @@ nav .fa-solid{
 
     .subtitle{
         font-size: 40px;
+    }
+
+    span.portfolio{
+        display: none;
     }
 
     .col1, .col2{
