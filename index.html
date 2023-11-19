@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/445292ce18.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="navbar">
                 <div class="logo"><span>B</span>ill Skarlatos</div>
                 <ul id="sidebar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
-                <h1>Hi, I'm <span>Bill</span><br> Skarlatos, from Greece</h1>
+                <h1>Hi! I'm <span>Bill</span> Skarlatos,<br>from Thessaloniki, Greece <img src="resources/Gr flag.png"></h1>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="col1">
-                    <img src="images/Me.jpg" alt="">
+                    <img src="resources/Me.jpg" alt="">
                 </div>
                 <div class="col2">
                     <h1 class="subtitle">About <span>Me</span></h1>
@@ -101,7 +101,7 @@
             <h1 class="subtitle">My Work <span class="portfolio">/ Portfolio</span></h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/project.png">
+                    <img src="resources/project.png">
                     <div class="layer">
                         <h3>Project 1</h3>
                         <p>This is a project. This text is going to describe the purposes of that project</p>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/project.png">
+                    <img src="resources/project.png">
                     <div class="layer">
                         <h3>Project 2</h3>
                         <p>This is a project. This text is going to describe the purposes of that project</p>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/project.png">
+                    <img src="resources/project.png">
                     <div class="layer">
                         <h3>Project 3</h3>
                         <p>This is a project. This text is going to describe the purposes of that project</p>
@@ -141,14 +141,14 @@
                         <a href="https://www.facebook.com/Skarlatos.Bill" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
                         <a href="https://www.instagram.com/bill_sk._/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
-                    <a href="" download class="btn btn2">Download CV</a>
+                    <a href="resources/NOTMYCV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="Submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -187,6 +187,17 @@
     function closeMenu(){
         sideBar.style.right = "-200px"
     }
+
+    window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    var scrolled = window.scrollY > 0;
+
+    if (scrolled) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 </script>
 
 </body>

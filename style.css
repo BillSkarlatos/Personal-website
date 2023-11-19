@@ -2,8 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -17,13 +21,26 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/pic1.jpg); */
     background-size: cover;
     background-position: center;
 }
 
 .container{
     padding: 10px 10%;
+}
+
+.navbar{
+    width: 85%;
+    z-index: 999;
+    position: fixed;
+    background: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    transition: background-color 0.7s ease;
+}
+
+.navbar.scrolled {
+    background-color: #3F0071;
 }
 
 nav{
@@ -87,6 +104,10 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #FB2576;
+}
+
+.header-text h1 img{
+    width: 48px;
 }
 
 /* About me */
@@ -361,11 +382,6 @@ span.portfolio{
     transition: transform 0.5s;
 }
 
-.contact-left a i:hover{
-    color: #FB2576;
-    transform: translateY(-5px);
-}
-
 .social-media a{
     text-decoration: none;
     font-size: 30px;
@@ -444,7 +460,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 800px){
     .header-text{
-        margin-top: 100%;
+        margin-top: 70%;
         font-size: 24px;
     }
 
