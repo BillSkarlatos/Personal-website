@@ -38,7 +38,7 @@
                 </div>
                 <div class="col2">
                     <h1 class="subtitle">About <span>Me</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>I'm a third-year student in the Computer Science Departement of the Aristotle University of Thessaloniki, on my way to aquire my BSc degree in Informatics with an expertise in Quantum Computing and Data Science and I've set my sights on an MSc program on Quantum Computing and A.I. Currently, I am devoting my free time between freelancing as a web developer and also developing my own projects. If you would like to learn more about me or even want to simply say hello, click <a href="#contact">here</a> and either leave me a message or find me on my social media platforms and I will get back to you as soon as possible.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
@@ -61,6 +61,7 @@
                     <div class="tab-contents" id="CWO">
                         <ul>
                             <li><span>Task Manager App</span><br>An algorithm that takes inputs taks, time required to complete them, importance factor etc and optimally organise them for the user </li>
+                            <li><span>Entimoi Apateones Website</span><br>A site for the Group "Entimoi Apateones", based in Xanthi, Gr</li>
                         </ul>
                     </div>
                 </div>
@@ -144,11 +145,12 @@
                     <a href="resources/NOTMYCV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form method="post" action="https://script.google.com/macros/s/AKfycbyunN0Oax5v3yNg0OIdJyT-80zCz6ZfQZPi4D7JmDZpByXlexBpyZGF4LuBf98fJTkiVA/exec" name="contact-form">
+                        <input type="text"name="your-name" placeholder="Your Name">
+                        <input type="text"name="your-number" placeholder="Your Number">
+                        <input type="your-email" name="Email" placeholder="Your Email">
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" value="Submit" id="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -197,8 +199,8 @@
     } else {
         navbar.classList.remove('scrolled');
     }
-});
+    });
 </script>
-
+<script src="Google Sheet.js"></script>
 </body>
 </html>
